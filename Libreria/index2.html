@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMundo - Compra Online</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Header (Same as index.html) -->
+    <header>
+        <div class="top-bar">
+            <div class="logo-left">
+                <h1>AutoMundo</h1>
+            </div>
+            <div class="logo-right">
+                <i class="fa-solid fa-car-side car-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-name">AUTOMUNDO</span>
+                    <span class="tagline">MUNDO DEL MOTOR</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Buscar..." class="search-input">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Tu librería</a></li> <!-- Changed link back to index.html -->
+                <li><a href="index2.html" class="active">Compra on-line</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="shop-container">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Filtrar por:</h2>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="filter-list">
+                <li class="active">
+                    <span>Todos los productos</span>
+                    <i class="fa-regular fa-square-check"></i>
+                </li>
+                <li>
+                    <span>Frenos y embrague</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Filtros</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Llantas y neumáticos</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Accesorios interiores</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Servicios mecánicos</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Repuestos de motor</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Suspensión y Dirección</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+                <li>
+                    <span>Sistema de Escape</span>
+                    <i class="fa-regular fa-square"></i>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Product Grid Section -->
+        <section class="products-section">
+            <h1 class="section-title">Productos Destacados</h1>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product1.png" alt="Filtro de Aceite Bosch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Filtro de Aceite Bosch Premium</h3>
+                        <p class="product-desc">Filtro de alta durabilidad compatible con la mayoría de modelos
+                            europeos. Mejora el rendimiento y la vida útil del motor.</p>
+                        <p class="price">Precio: 19,90 €</p>
+                        <button class="btn-details">Detalles</button>
+                        <button class="btn-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product2.png" alt="Kit de Frenos Brembo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Kit de Frenos Brembo Sport</h3>
+                        <p class="product-desc">Discos ventilados + pastillas de alto rendimiento. Máxima seguridad y
+                            control en frenadas exigentes.</p>
+                        <p class="price">Precio: 210,00 €</p>
+                        <button class="btn-details">Detalles</button>
+                        <button class="btn-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product3.png" alt="Juego de Limpias Bosch">
+                    </div>
+                    <div class="product-info">
+                        <h3>Juego de Limpias Bosch AeroTwin</h3>
+                        <p class="product-desc">Par de escobillas de alto rendimiento con sistema antirruido. Aseguran
+                            visibilidad perfecta bajo lluvia intensa.</p>
+                        <p class="price">Precio: 29,90 €</p>
+                        <button class="btn-details">Detalles</button>
+                        <button class="btn-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Product Card 4 (Duplicate for grid visualization) -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/product1.png" alt="Aceite de Motor Castrol">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceite Motor Synthetic 5W-30</h3>
+                        <p class="product-desc">Aceite 100% sintético para máxima protección del motor en temperaturas
+                            extremas. Envase de 5 Litros.</p>
+                        <p class="price">Precio: 45,50 €</p>
+                        <button class="btn-details">Detalles</button>
+                        <button class="btn-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer>
+        <div class="footer-icons">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-text">
+            <p>Todos los derechos reservados©</p>
+        </div>
+        <div class="footer-author">
+            <p>Antonio Lara Martínez</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
