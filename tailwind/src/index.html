@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación CLI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 01-Instalacion-Y-configuracion -->
+    <h1 class="text-center text-white bg-red-900 p-8 font-bold text-5xl">Bienvenido a Tailwind mediante CLI</h1>
+
+    <!-- 02-Conceptos-Base-y-Preflight -->
+    <div class="p-10">
+        <!-- Ejemplo 1: Utility Classes (Sobrescriben todo) -->
+        <h1 class="text-center text-white bg-red-900 p-8 font-bold text-5xl mb-10">
+            Bienvenido a Tailwind (Utility Classes)
+        </h1>
+
+        <!-- Ejemplo 2: Estilos Base (@layer base) -->
+        <div class="mb-10">
+            <h1>Este es un H1 usando estilos base (@layer base)</h1>
+            <h2>Este es un H2 usando estilos base (@layer base)</h2>
+            <p>Este párrafo no tiene estilos base definidos, así que usa los de Preflight (reset).</p>
+        </div>
+
+        <!-- Ejemplo 3: Preflight en Listas -->
+        <div class="border p-4">
+            <h2>Efecto Preflight en Listas</h2>
+            <p class="mb-2">Por defecto, las listas no tienen bullets ni padding:</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+
+            <p class="mt-4 mb-2 font-bold">Lista con clases de utilidad:</p>
+            <ul class="list-disc pl-5">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 03-Colores-y-Personalizacion -->
+    <h1 class="bg-red-900/80 text-white">Bienvenido a Tailwind</h1>
+
+    <div class="text-green-500 bg-black">
+        <p class="text-red-500">Este texto hereda el color verde</p>
+        <p>Este también</p>
+    </div>
+
+    <h1 class="bg-[#2E86AB] text-white">Título con color personalizado directo</h1>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-12 h-12 fill-[#1877f2]">
+        <!-- Path del SVG -->
+
+        <path
+            d="M20 15h-7V9.86c1.72-.45 3-2 3-3.86 0-2.21-1.79-4-4-4S8 3.79 8 6c0 1.86 1.28 3.41 3 3.86V15H4c-1.1 0-2 .9-2 2v3c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-3c0-1.1-.9-2-2-2M10 6c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2M4 20v-3h16v3z">
+        </path>
+    </svg>
+
+    <!-- 04-Tipografia -->
+    <h1 class="font-[Plus_Jakarta_Sans]">Fuente de google</h1>
+    <h1>Fuente por defecto</h1>
+
+    <h1 class="text-5xl">Fuente con letra grande</h1>
+
+    <h1 class="text-5xl italic">Fuente con letra grande y cursiva</h1>
+
+    <h1 class="text-xs">Fuente con letra pequeña</h1>
+
+    <!-- 05-Box-Model-y-Layaout -->
+    <div class="p-10 space-y-10">
+
+        <!-- Ejemplo de Anchura -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Anchura (Width)</h2>
+            <div class="text-center w-1/2 bg-amber-300 p-4">
+                <h1 class="text-2xl">Mitad de ancho (w-1/2)</h1>
+            </div>
+        </div>
+
+        <!-- Ejemplo de Padding y Margin -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Padding y Margin</h2>
+            <div class="bg-blue-500 p-10 inline-block">
+                <p class="bg-white">Contenido con padding de 40px (p-10)</p>
+            </div>
+            <div class="mt-8 bg-red-200 p-4 w-1/2 mx-auto">
+                <p class="text-center">Elemento centrado con mx-auto</p>
+            </div>
+        </div>
+
+        <!-- Ejemplo de Divide -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Divide (Bordes entre hijos)</h2>
+            <nav class="flex divide-x-4 divide-lime-500 divide-dotted border border-lime-500 w-fit">
+                <a href="#" class="px-8 py-4 bg-lime-100 block">Inicio</a>
+                <a href="#" class="px-8 py-4 bg-lime-100 block">Acerca de</a>
+                <a href="#" class="px-8 py-4 bg-lime-100 block">Contacto</a>
+            </nav>
+        </div>
+
+        <!-- Ejemplo Final: Card -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Ejemplo Completo: Card</h2>
+            <div class="w-md mx-auto my-10 border-2 border-gray-500/50 py-7 px-5 rounded-2xl space-y-8">
+                <!-- Usamos una imagen de placeholder ya que no tenemos assets locales -->
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba"
+                    class="w-full h-60 object-cover rounded-md" alt="Paisaje">
+                <h3 class="text-3xl font-bold my-6">¡Título Card!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut fuga temporibus consectetur libero
+                    impedit a
+                    provident sed exercitationem, praesentium quam ea accusamus voluptatem unde? Est rem quod
+                    dignissimos sint
+                    tempora.
+                </p>
+                <a href="#"
+                    class="block bg-blue-600 text-white text-center py-4 rounded-full hover:bg-blue-700 transition">Leer
+                    más</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

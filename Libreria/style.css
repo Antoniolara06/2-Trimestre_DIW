@@ -193,7 +193,7 @@ header {
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /* 2 parts cards, 1 part map */
+    /* 2 partes para las terjetas, 1 para el mapa */
     gap: 20px;
     padding: 2rem 5%;
     max-width: 1600px;
@@ -606,7 +606,7 @@ footer {
         gap: 1rem;
     }
 
-    .hero {
+    .hero { 
         flex-direction: column;
         text-align: center;
     }
