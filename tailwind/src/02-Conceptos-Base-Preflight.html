@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Conceptos Base y Preflight</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="p-10">
+    <a href="index.html" class="mb-5 inline-block text-blue-600 hover:underline font-semibold">&larr; Volver al
+        índice</a>
+
+    <div class="p-10 border border-gray-200 rounded-lg">
+        <!-- Ejemplo 1: Utility Classes (Sobrescriben todo) -->
+        <h1 class="text-center text-white bg-red-900 p-8 font-bold text-5xl mb-10">
+            Bienvenido a Tailwind (Utility Classes)
+        </h1>
+
+        <!-- Ejemplo 2: Estilos Base (@layer base) -->
+        <div class="mb-10">
+            <h1>Este es un H1 usando estilos base (@layer base)</h1>
+            <h2>Este es un H2 usando estilos base (@layer base)</h2>
+            <p>Este párrafo no tiene estilos base definidos, así que usa los de Preflight (reset).</p>
+        </div>
+
+        <!-- Ejemplo 3: Preflight en Listas -->
+        <div class="border p-4">
+            <h2>Efecto Preflight en Listas</h2>
+            <p class="mb-2">Por defecto, las listas no tienen bullets ni padding:</p>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+
+            <p class="mt-4 mb-2 font-bold">Lista con clases de utilidad:</p>
+            <ul class="list-disc pl-5">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
